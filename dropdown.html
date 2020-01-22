@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div>
+		<select name="address" id="add" onchange="myfunction()">
+			<option value="" id="00"></option>
+			<option value="address1" id="01">addresstype1</option>
+			<option value="address2" id="02">addresstype2</option>
+		</select>
+		<p id="p1"></p>
+	
+</div>
+<div id="match1" style="display: none;">
+	<label for="address">address1</label>  <input type="text" name="add" id="address" />
+</div>
+<div id="match2" style="display: none;">
+</div>
+<script >
+	
+	function myfunction(){
+		alert("hii");
+		var x;
+		x=document.getElementById("add").value;
+		// y=x.options[x.selectedIndex].text;
+		// if (y==addresstype1) {
+		
+		// }
+		document.getElementById('match2').style.display="none";
+
+		document.getElementById("p1").innerHTML=x;
+		if (x=="address1") {
+			// document.getElementById("p1").innerHTML="i m a don";
+			document.getElementById("match1").style.display="block";
+		} else{
+			document.getElementById("match1").style.display="none";
+		}
+
+		if (x=="address2") {
+			document.getElementById("match2").style.display="block";
+
+			document.getElementById("match2").innerHTML="address2:<textarea> </textarea>"
+		}
+
+
+	}
+</script>
+
+</body>
+</html>
