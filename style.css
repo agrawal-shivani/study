@@ -1,0 +1,17 @@
+
+.form-horizontal label 
+{
+    font-size: 12px !important;
+}
+.action-buttons a 
+{
+    display: ruby-base !important;
+}
+.ace-file-input .ace-file-container, .input_textarea
+{
+	width: 218px !important;
+}
+.input-group
+{
+	width: 216px;
+}
